@@ -1,3 +1,7 @@
+# Note: The maven-plugin is still under development!
+
+
+
 # HelloJPro-Maven
 
 [![Build Status](https://travis-ci.org/jpro-one/HelloJPro-Maven.svg?branch=master)](https://travis-ci.org/jpro-one/HelloJPro-Maven)
