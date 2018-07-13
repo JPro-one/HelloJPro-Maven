@@ -3,11 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sandec.jpro</groupId>
-    <artifactId>hellojpro</artifactId>
+    <artifactId>hellojpro-maven</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
+        <jproVersion>2018.1.5-SNAPSHOT</jproVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -23,7 +24,7 @@
       <plugin>
           <groupId>com.sandec.jpro</groupId>
           <artifactId>jpro-maven-plugin</artifactId>
-          <version>2018.1.5-SNAPSHOT</version>
+          <version>${jproVersion}</version>
           <configuration>
               <visible>false</visible>
               <JVMArgs>
@@ -33,13 +34,6 @@
               <mainClassName>com.jpro.hellojpro.HelloJProFXML</mainClassName>
               <openingPath>/</openingPath>
           </configuration>
-          <executions>
-              <execution>
-                  <goals>
-                      <goal>run</goal>
-                  </goals>
-              </execution>
-          </executions>
       </plugin>
 
     </plugins>
@@ -65,7 +59,7 @@
         <dependency>
             <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
-            <version>2018.1.5-SNAPSHOT</version>
+            <version>${jproVersion}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
