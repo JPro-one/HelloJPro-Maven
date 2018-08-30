@@ -26,7 +26,7 @@ mvn compile jpro:run
 ### Start jpro in background (server mode) ###
 
 ```
-mvn compile jpro:estart
+mvn compile jpro:restart
 ```
 
 
