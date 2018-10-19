@@ -4,7 +4,7 @@
 
 # HelloJPro-Maven
 
-[![Build Status](https://travis-ci.org/jpro-one/HelloJPro-Maven.svg?branch=master)](https://travis-ci.org/JPro-one/HelloJPro-Maven)
+[![Build Status](https://travis-ci.org/JPro-one/HelloJPro-Maven.svg?branch=master)](https://travis-ci.org/JPro-one/HelloJPro-Maven)
 
 This project, is a hello-world for [jpro, which enables javafx in the web.](https://www.jpro.one/)
 
