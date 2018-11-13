@@ -1,4 +1,3 @@
-# Note: The maven-plugin is still under development!
 
 
 
