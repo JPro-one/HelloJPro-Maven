@@ -28,8 +28,7 @@
           <configuration>
               <visible>false</visible>
               <JVMArgs>
-                  <JVMArg>arg1</JVMArg>
-                  <JVMArg>arg2</JVMArg>
+                  <!-- <JVMArg>your-args</JVMArg> -->
               </JVMArgs>
               <mainClassName>com.jpro.hellojpro.HelloJProFXML</mainClassName>
               <openingPath>/</openingPath>
