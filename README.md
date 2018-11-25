@@ -18,14 +18,14 @@ More about JPro: Website: [jpro.one](https://www.jpro.one/) - Twitter: [@jpro_on
 ### Start jpro in foreground (development mode) ###
 
 ```
-mvn compile jpro:run
+mvn jpro:run
 ```
 
 
 ### Start jpro in background (server mode) ###
 
 ```
-mvn compile jpro:restart
+mvn jpro:restart
 ```
 
 
@@ -64,7 +64,7 @@ Checkout the following chapters to configure your server correctly for jpro:
 Create a zip which contains the application with the following command:
 
 ```groovy
-mvn package jpro:release
+mvn jpro:release
 ```
 The path of the zip-file is the following: `build/distributions/HelloJPro-jpro.zip`
 
