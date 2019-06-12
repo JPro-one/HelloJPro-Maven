@@ -8,10 +8,11 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jproVersion>2018.1.10</jproVersion>
+        <jpro.version>2018.1.12</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <javafx.version>11</javafx.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -24,7 +25,7 @@
       <plugin>
           <groupId>com.sandec.jpro</groupId>
           <artifactId>jpro-maven-plugin</artifactId>
-          <version>${jproVersion}</version>
+          <version>${jpro.version}</version>
           <configuration>
               <visible>false</visible>
               <JVMArgs>
@@ -58,38 +59,38 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>11</version>
+            <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
-            <version>11</version>
+            <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-swing</artifactId>
-            <version>11</version>
+            <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>11</version>
+            <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
-            <version>11</version>
+            <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
-            <version>${jproVersion}</version>
+            <version>${jpro.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
