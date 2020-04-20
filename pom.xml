@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2019.2.2</jpro.version>
+        <jpro.version>2019.2.3</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
