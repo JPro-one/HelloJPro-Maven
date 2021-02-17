@@ -62,12 +62,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>de.sandec</groupId>
-            <artifactId>JMemoryBuddy</artifactId>
-            <version>0.2.5-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
@@ -103,12 +97,6 @@
             <artifactId>jpro-webapi</artifactId>
             <version>${jpro.version}</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
