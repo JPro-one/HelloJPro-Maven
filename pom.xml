@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2020.1.5</jpro.version>
+        <jpro.version>2020.1.6</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -47,14 +47,14 @@
     <pluginRepositories>
         <pluginRepository>
             <id>jpro - sandec repository</id>
-            <url>https://sandec.bintray.com/repo</url>
+            <url>https://sandec.jfrog.io/artifactory/repo/</url>
         </pluginRepository>
     </pluginRepositories>
 
     <repositories>
         <repository>
             <id>jpro - sandec repository</id>
-            <url>https://sandec.bintray.com/repo</url>
+            <url>https://sandec.jfrog.io/artifactory/repo/</url>
         </repository>
     </repositories>
 
