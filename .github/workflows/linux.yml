@@ -14,4 +14,4 @@ jobs:
           architecture: x64
       - name: compile
         run: |
-          ./mvnw clean package jpro:release
+          ./mvnw clean package jpro:release -e
