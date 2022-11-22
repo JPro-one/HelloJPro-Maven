@@ -8,10 +8,12 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2022.1.7</jpro.version>
+        <jpro.version>2022.1.8</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <javafx.version>17.0.2</javafx.version>
     </properties>
 
@@ -24,7 +26,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
+            <version>3.10.1</version>
         </plugin>
 
         <plugin>
