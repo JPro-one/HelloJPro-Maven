@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2022.1.8</jpro.version>
+        <jpro.version>2023.1.0</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -30,15 +30,15 @@
         </plugin>
 
         <plugin>
-            <groupId>com.sandec.jpro</groupId>
+            <groupId>one.jpro</groupId>
             <artifactId>jpro-maven-plugin</artifactId>
             <version>${jpro.version}</version>
             <configuration>
                 <visible>false</visible>
                 <JVMArgs>
-                    <!-- <JVMArg>your-args</JVMArg> -->
+<!--                     <JVMArg>your-args</JVMArg> -->
                 </JVMArgs>
-                <mainClassName>com.jpro.hellojpro.HelloJProFXML</mainClassName>
+                <mainClassName>one.jpro.hellojpro.HelloJProFXML</mainClassName>
                 <openingPath>/</openingPath>
             </configuration>
         </plugin>
@@ -59,8 +59,6 @@
             <url>https://sandec.jfrog.io/artifactory/repo/</url>
         </repository>
     </repositories>
-
-
 
     <dependencies>
         <dependency>
@@ -93,7 +91,6 @@
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
-
         <dependency>
             <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
@@ -101,7 +98,5 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
-
 
 </project>
