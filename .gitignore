@@ -1,0 +1,11 @@
+.idea/
+.mvn/
+out/
+*/build/
+*/out/
+.vscode
+**/bin
+logs/
+target/
+RUNNING_PID
+.DS_STORE
