@@ -14,7 +14,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
-        <javafx.version>17.0.2</javafx.version>
+        <javafx.version>17.0.6</javafx.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -34,12 +34,7 @@
             <artifactId>jpro-maven-plugin</artifactId>
             <version>${jpro.version}</version>
             <configuration>
-                <visible>false</visible>
-                <JVMArgs>
-<!--                     <JVMArg>your-args</JVMArg> -->
-                </JVMArgs>
                 <mainClassName>one.jpro.hellojpro.HelloJProFXML</mainClassName>
-                <openingPath>/</openingPath>
             </configuration>
         </plugin>
 
@@ -95,7 +90,7 @@
             <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
             <version>${jpro.version}</version>
-            <scope>compile</scope>
+<!--            <scope>compile</scope>-->
         </dependency>
     </dependencies>
 
