@@ -1,5 +1,7 @@
 # HelloJPro-Maven
 
+![CI Build](https://github.com/JPro-one/HelloJPro-Maven/actions/workflows/main.yml/badge.svg)
+
 This project, is a hello-world for [jpro, which enables javafx in the web.](https://www.jpro.one/)
 
 [Here you can see this program running.](https://demos.jpro.one/helloworld.html)
