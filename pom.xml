@@ -21,24 +21,22 @@
     <url>https://www.jpro.one/</url>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+            </plugin>
 
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.11.0</version>
-        </plugin>
-
-        <plugin>
-            <groupId>one.jpro</groupId>
-            <artifactId>jpro-maven-plugin</artifactId>
-            <version>${jpro.version}</version>
-            <configuration>
-                <mainClassName>one.jpro.hellojpro.HelloJProFXML</mainClassName>
-            </configuration>
-        </plugin>
-
-    </plugins>
+            <plugin>
+                <groupId>one.jpro</groupId>
+                <artifactId>jpro-maven-plugin</artifactId>
+                <version>${jpro.version}</version>
+                <configuration>
+                    <mainClassName>one.jpro.hellojpro.HelloJProFXML</mainClassName>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <pluginRepositories>
@@ -62,30 +60,35 @@
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-swing</artifactId>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
@@ -93,5 +96,4 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
 </project>
