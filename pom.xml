@@ -27,7 +27,14 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
             </plugin>
-
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>one.jpro.hellojpro.HelloJProFXML</mainClass>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>one.jpro</groupId>
                 <artifactId>jpro-maven-plugin</artifactId>
