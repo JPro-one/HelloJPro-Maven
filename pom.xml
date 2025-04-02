@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2025.1.0</jpro.version>
+        <jpro.version>2025.2.0</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>22</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
