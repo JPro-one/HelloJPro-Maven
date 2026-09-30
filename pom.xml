@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2026.3.1</jpro.version>
+        <jpro.version>2026.4.0</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>22</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -16,9 +16,7 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <javafx.version>25.0.2</javafx.version>
         <cssfx.version>11.5.1</cssfx.version>
-        <jpro.platform.version>0.7.3</jpro.platform.version>
-        <!-- jpro-css-grid is not in a Platform release yet -->
-        <jpro.cssgrid.version>0.7.4-SNAPSHOT</jpro.cssgrid.version>
+        <jpro.platform.version>0.8.0</jpro.platform.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -58,7 +56,7 @@
     </pluginRepositories>
 
     <repositories>
-        <!-- JPro, and for the JPro Platform: SimpleFX (needed by the routing library) and snapshot builds -->
+        <!-- JPro, and SimpleFX for the JPro Platform routing library -->
         <repository>
             <id>jpro - sandec repository</id>
             <url>https://sandec.jfrog.io/artifactory/repo</url>
@@ -108,7 +106,7 @@
         <dependency>
             <groupId>one.jpro.platform</groupId>
             <artifactId>jpro-css-grid</artifactId>
-            <version>${jpro.cssgrid.version}</version>
+            <version>${jpro.platform.version}</version>
         </dependency>
     </dependencies>
 </project>
