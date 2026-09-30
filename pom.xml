@@ -8,13 +8,15 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jpro.version>2026.3.1</jpro.version>
+        <jpro.version>2026.4.0</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>22</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <javafx.version>25.0.2</javafx.version>
+        <cssfx.version>11.5.1</cssfx.version>
+        <jpro.platform.version>0.8.0</jpro.platform.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -32,7 +34,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>one.jpro.hellojpro.HelloJProFXML</mainClass>
+                    <mainClass>one.jpro.hellojpro.HelloJPro</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -40,7 +42,7 @@
                 <artifactId>jpro-maven-plugin</artifactId>
                 <version>${jpro.version}</version>
                 <configuration>
-                    <mainClassName>one.jpro.hellojpro.HelloJProFXML</mainClassName>
+                    <mainClassName>one.jpro.hellojpro.HelloJPro</mainClassName>
                 </configuration>
             </plugin>
         </plugins>
@@ -54,6 +56,7 @@
     </pluginRepositories>
 
     <repositories>
+        <!-- JPro, and SimpleFX for the JPro Platform routing library -->
         <repository>
             <id>jpro - sandec repository</id>
             <url>https://sandec.jfrog.io/artifactory/repo</url>
@@ -70,28 +73,7 @@
 
         <dependency>
             <groupId>org.openjfx</groupId>
-            <artifactId>javafx-web</artifactId>
-            <version>${javafx.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-swing</artifactId>
-            <version>${javafx.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-media</artifactId>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
@@ -101,6 +83,30 @@
             <artifactId>jpro-webapi</artifactId>
             <version>${jpro.version}</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>fr.brouillard.oss</groupId>
+            <artifactId>cssfx</artifactId>
+            <version>${cssfx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>one.jpro.platform</groupId>
+            <artifactId>jpro-routing-core</artifactId>
+            <version>${jpro.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>one.jpro.platform</groupId>
+            <artifactId>jpro-flexbox</artifactId>
+            <version>${jpro.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>one.jpro.platform</groupId>
+            <artifactId>jpro-css-grid</artifactId>
+            <version>${jpro.platform.version}</version>
         </dependency>
     </dependencies>
 </project>
